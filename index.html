@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device.width, initial.scale=1.0">
+  <title>Calculadora de Gorjetas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="container">
+  <div>
+    <h1 class="title">Calculadora de Gorjetas</h1>
+  </div>
+  <div>
+    <form class="tipsForm" id="tipsForm">  
+	  <label for="bill"> 
+	    <p>Quanto ficou a conta?</p>
+	  </label>
+	  <p>
+	    R$ <input type="number" min="1" placeholder="100" name="bill" id="bill" class="formInput" required
+		onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57">
+	  </p>
+	  <label for="serviceQuality"> 
+	    <p>Como foi o serviço?</p>
+	  </label>
+	  <p>
+	    <select name="serviceQuality" id="serviceQuality" class="formSelect" required>
+		  <option disabled selected hidden value=""> Escolha uma opção </option> 
+		  <option value="0.3">30% - Incrível</option>
+		  <option value="0.2">20% - Bom</option>
+		  <option value="0.15">15% - Aceitável</option>
+		  <option value="0.1">10% - Ruim</option>
+		  <option value="0">0% - Péssimo</option>
+		</select>
+	  </p>
+	  <label for="people">
+	    <p>Quantas pessoas irão dividir a conta?</p>
+	  </label>
+	  <p>
+	    <input type="number" min="1" placeholder="1" name="people" id="people" class="formInput" required
+		onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57"> pessoa(s)
+	  </p>
+	  <label> 
+	    <p>Valor da Gorjeta</p>
+	  </label>
+	  <div id="totalTip">
+        R$<span id="tip">0.00</span> <span id="each">cada</span>
+      </div>
+	  <button type="submit" class="formButton"> Calcular </button>
+	</form>
+  </div>
+ </div>
+ <script type="text/javascript" src="scripts.js"> </script>
+</body>
+</html>
