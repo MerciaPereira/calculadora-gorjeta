@@ -1,4 +1,7 @@
-# calculadora-gorjeta
-Criada uma calculadora de gorjetas. (CSS, HTML, JS)
+# calculadora-gorjeta 🖩
+Criada uma calculadora de gorjetas. 
 
-Efetuada validações para não permitir informar números menores que 1 nos campos de valores e os campos necessários para o cálculo não podem ser vazios.
+- Não permite informar valor menor que 1 nos campos númericos.
+- Verifica o preenchimento dos campos.
+
+#CSS #HTML #JS
